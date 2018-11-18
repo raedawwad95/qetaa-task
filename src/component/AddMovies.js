@@ -19,12 +19,12 @@ class AddMovies extends Component {
     this.getMovies = this.getMovies.bind(this)
   }
   getMovies(){
-    axios.get(`${API_URL}&&s=${this.state.query}`)
+    axios.get(`${API_URL}&t=${this.state.query}`)
       .then(({ data }) => {
         if(data.Response === "False"){
           alert(data.Error)
         }else{
-          this.props.addMovies(data.Search);
+          this.props.addMovies(data);
         }
       })
       .catch(function (error) {

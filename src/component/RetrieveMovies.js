@@ -13,7 +13,12 @@ const RetrieveMovies = ({ movies }) =>(
         <div className="card-body">
           <h5 className="card-title">{data.Title}</h5>
           <img src={data.Poster} className="rounded" alt={data.Type}/>
-          <footer className="card-footer mt-3 text-muted">Year: {data.Year}</footer>
+          <h6 className="mt-3">{data.Plot}</h6>
+          <footer className="card-footer mt-3 text-muted d-flex justify-content-between">
+          <p>Director: {data.Director}</p>
+          <p>Writer: {data.Writer}</p>
+          <p> Year: {data.Year}</p>
+          </footer>
         </div>
       </div>
     ))}
