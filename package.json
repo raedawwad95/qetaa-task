@@ -24,6 +24,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "react-redux": "^5.1.1",
     "redux": "^4.0.1"
   }
 }

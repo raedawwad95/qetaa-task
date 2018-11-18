@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import index from "./js/index"
 import axios from 'axios'
 
 
